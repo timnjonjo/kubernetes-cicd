@@ -45,7 +45,7 @@ node {
     stage("Verify UAT") {
         dir('services/java-vote-service-redis/kubernetes') {
             def namespace = "uat"
-            def service = "java-vote-service"
+            def service = "java-vote-service-mtn"
             def serviceIP = "";       
 
             echo "Waiting for Service to get an IP"
