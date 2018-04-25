@@ -6,16 +6,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: java-vote-service
+      app: java-vote-service-mtn
   replicas: 2 
   template: # create pods using pod definition in this template
     metadata:
       namespace: XX_NAMESPACE_XX
       labels:
-        app: java-vote-service
+        app: java-vote-service-mtn
     spec:
       containers:
-      - name: java-vote-service
+      - name: java-vote-service-mtn
         image: sabbour.azurecr.io/services/java-vote-service-redis:XX_IMAGETAG_XX
         livenessProbe:
           httpGet:
