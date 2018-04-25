@@ -1,11 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: java-vote-service
+  name: java-vote-service-mtn
   namespace: XX_NAMESPACE_XX
 spec:
   selector:
-    app: java-vote-service
+    app: java-vote-service-mtn
   type: LoadBalancer
   ports:
   - port: 80
